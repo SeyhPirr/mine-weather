@@ -128,8 +128,10 @@ export default function App() {
 
   return (
     <>
-      <form className="main" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input type="text" ref={myRef} />
+      </form>
+      <div className="data main">
         <div>{infos.errorMessage}</div>
         <div className="location">
           {infos.name} {infos.country}
@@ -148,7 +150,7 @@ export default function App() {
         <div className="clock">
           {infos.clock ? <Clock time_zone={infos.clock} /> : null}
         </div>
-      </form>
+      </div>
     </>
   );
 }

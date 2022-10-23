@@ -5,41 +5,5 @@ body{
   
     background-image: url(./backgrounds/vera-davidova-J_CutWQnT78-unsplash.jpg);
     background-size:cover;
-    background-color: #cccccc;
-    
-   
-    background-position: center;
-    font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin:0;
-    display: block;
-}
-.location{
-    text-align: center;
-    
-}
-.humidity{
-    text-align: left;
-    width: 128px;
-}
-.temp{
-    text-align: center;
-    width: 128px;
-
-}
-.wind{
-    text-align: center;
-    width: 128px;
-
-}
-.clock{
-width:30%;
-}
-.weather{
-    width:158px;
-    
-}
-.main{
-    display:grid;
-    
+    margin:0;   
 }
