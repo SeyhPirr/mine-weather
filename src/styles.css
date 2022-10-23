@@ -3,9 +3,7 @@
 }
 body{
   
-    background-image: url(./backgrounds/vera-davidova-J_CutWQnT78-unsplash.jpg);
-    background-size:cover;
-    margin:0;   
+    background-image: linear-gradient(to right, #BBD2C5 , #536976,#292E49);
 }
 .input-search{
     position: fixed;
