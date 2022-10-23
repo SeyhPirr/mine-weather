@@ -33,11 +33,13 @@ body{
 
 }
 .clock{
-    text-align: end;
-    
-    width:300px;
-   
+width:30%;
 }
 .weather{
-    width:158px
+    width:158px;
+    
+}
+.main{
+    display:grid;
+    
 }
