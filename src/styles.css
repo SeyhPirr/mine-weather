@@ -7,3 +7,14 @@ body{
     background-size:cover;
     margin:0;   
 }
+.input-search{
+    position: fixed;
+    left:0;
+    top: 0;
+    width: 100%;
+}
+.main{
+    position:absolute;
+    top: 30px;
+    left:0;
+}

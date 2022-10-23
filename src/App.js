@@ -128,25 +128,31 @@ export default function App() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <input type="text" ref={myRef} />
+      <form className="search" onSubmit={handleSubmit}>
+        <input className="input-search" type="text" ref={myRef} />
       </form>
       <div className="data main">
         <div>{infos.errorMessage}</div>
         <div className="location">
           {infos.name} {infos.country}
         </div>
-        <div className="humidity">
-          Humidity <br />
-          {infos.humidity}%
-        </div>
+        {infos.humidity ? (
+          <div className="humidity">
+            Humidity <br />
+            {infos.humidity}%
+          </div>
+        ) : null}
 
-        <div className="temp">
-          {infos.temp} °C <br /> {infos.tempFeel} °C
-        </div>
+        {infos.temp ? (
+          <div className="temp">
+            {infos.temp} °C <br /> {infos.tempFeel} °C
+          </div>
+        ) : null}
 
         <div className="weather">{infos.weather}</div>
-        <div className="wind">{infos.windSpeed} km/h</div>
+        {infos.windSpeed ? (
+          <div className="wind">{infos.windSpeed} km/h</div>
+        ) : null}
         <div className="clock">
           {infos.clock ? <Clock time_zone={infos.clock} /> : null}
         </div>
