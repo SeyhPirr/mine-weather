@@ -145,9 +145,9 @@ export default function App() {
 
         <div className="weather">{infos.weather}</div>
         <div className="wind">{infos.windSpeed} km/h</div>
-        {infos.clock ? (
-          <Clock className="clock" time_zone={infos.clock} />
-        ) : null}
+        <div className="clock">
+          {infos.clock ? <Clock time_zone={infos.clock} /> : null}
+        </div>
       </form>
     </>
   );
