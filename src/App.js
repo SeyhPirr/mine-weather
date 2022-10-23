@@ -145,8 +145,11 @@ export default function App() {
 
         {infos.temp ? (
           <div className="temp">
-            {infos.temp} °C <br /> {infos.tempFeel} °C
+            {infos.temp} °C <br />
           </div>
+        ) : null}
+        {infos.tempFeel ? (
+          <div className="tempFeel"> {infos.tempFeel} °C</div>
         ) : null}
 
         <div className="weather">{infos.weather}</div>

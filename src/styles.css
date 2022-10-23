@@ -14,5 +14,43 @@ body{
 .main{
     position:absolute;
     top: 30px;
-    left:0;
+    right:10%;
+    font-size: 30px;
+}
+.location{
+position:fixed;
+left:40%;
+top:17px
+
+}
+.temp{
+    position:fixed;
+    left:40%;
+    top:10%;
+}
+.tempFeel{
+    position:fixed;
+    left:40%;
+    top:15%;
+}
+.weather{
+    position:fixed;
+    left:40%;
+    top:20%
+}
+.clock{
+    position:fixed;
+    left:70%;
+    top:10%
+}
+.wind{
+    position: fixed;
+    left:40%;
+    top:30%
+
+}
+.humidity{
+    position:fixed;
+    left:10%;
+    top:10%
 }
