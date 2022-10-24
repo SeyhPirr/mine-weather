@@ -17,40 +17,72 @@ body{
     right:10%;
     font-size: 30px;
 }
-.location{
-position:fixed;
-left:40%;
-top:17px
 
-}
-.temp{
-    position:fixed;
-    left:40%;
-    top:10%;
-}
-.tempFeel{
-    position:fixed;
-    left:40%;
-    top:15%;
-}
-.weather{
-    position:fixed;
-    left:40%;
-    top:20%
-}
+
 .clock{
     position:fixed;
     left:70%;
     top:10%
 }
-.wind{
-    position: fixed;
-    left:40%;
-    top:30%
 
-}
+
 .humidity{
     position:fixed;
     left:10%;
-    top:10%
+    top:10%;
+    
+}
+.mid{
+    
+   position: fixed;
+ left:40%;
+ top:10%;
+ background-image: linear-gradient(to right, #BBD2C58a , #5369768a,#292E498a);
+ border-radius:25px;
+ width:200px;
+ height:300px;
+ 
+}
+.left{
+    color:black;
+}
+.right{
+    color:black;
+    background-image: linear-gradient(to right, #BBD2C58a , #5369768a,#292E498a);
+    border-radius:25px;
+    width:270px;
+    height:120px;
+    text-align: center;
+}
+.left{
+    background-image: linear-gradient(to right, #bbd2c556 , #53697656,#292E4956);
+    border-radius:25px;
+    width:170px;
+    height:120px;
+    text-align: center;
+}
+.location{
+    position: fixed;
+    top:10%;
+}
+.temp{
+    position: fixed;
+    top:20%;
+    background-color: transparent;
+}
+.tempFeel{
+    position:fixed;
+    top:25%;
+}
+.weather{
+    position: fixed;
+    top:35%
+}
+.wind{
+    position: fixed;
+    top:45%
+}
+.mid-text{
+    text-align: center;
+    left:41%;
 }

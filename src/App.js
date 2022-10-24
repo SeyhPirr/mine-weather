@@ -133,30 +133,32 @@ export default function App() {
       </form>
       <div className="data main">
         <div>{infos.errorMessage}</div>
-        <div className="location">
-          {infos.name} {infos.country}
-        </div>
+
         {infos.humidity ? (
-          <div className="humidity">
+          <div className="humidity left">
             Humidity <br />
             {infos.humidity}%
           </div>
         ) : null}
-
-        {infos.temp ? (
-          <div className="temp">
-            {infos.temp} °C <br />
+        <div className="mid">
+          <div className="location mid-text">
+            {infos.name} {infos.country}
           </div>
-        ) : null}
-        {infos.tempFeel ? (
-          <div className="tempFeel"> {infos.tempFeel} °C</div>
-        ) : null}
+          {infos.temp ? (
+            <div className="temp mid-text">
+              {infos.temp} °C <br />
+            </div>
+          ) : null}
+          {infos.tempFeel ? (
+            <div className="tempFeel mid-text"> {infos.tempFeel} °C</div>
+          ) : null}
+          <div className="weather mid-text ">{infos.weather}</div>
+          {infos.windSpeed ? (
+            <div className="wind mid-text">{infos.windSpeed} km/h</div>
+          ) : null}
+        </div>
 
-        <div className="weather">{infos.weather}</div>
-        {infos.windSpeed ? (
-          <div className="wind">{infos.windSpeed} km/h</div>
-        ) : null}
-        <div className="clock">
+        <div className="clock right">
           {infos.clock ? <Clock time_zone={infos.clock} /> : null}
         </div>
       </div>
