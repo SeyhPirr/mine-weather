@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef, useEffect } from "react";
 import "./styles.css";
+import Clock from "./Clock";
 
 const myApiKey = "beaefa44099b851be631a8e01ca04ca8";
 const myApiKey1 = "ecc70ed7808c46d5a738d67ff6c5e275";
@@ -35,34 +36,6 @@ export default function App() {
   });
 
   const myRef = useRef("");
-  function Clock({ time_zone }) {
-    const [currentTime, setTime] = useState("");
-
-    let options = {
-        timeZone: time_zone,
-        year: "numeric",
-        month: "numeric",
-        day: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-      },
-      formatter = new Intl.DateTimeFormat([], options);
-
-    function updateTime() {
-      let time = formatter.format(new Date());
-
-      setTime(time);
-    }
-    useEffect(() => {
-      let myInterval = setInterval(updateTime, 500);
-    });
-
-    if (time_zone) {
-      return <div>{currentTime}</div>;
-    }
-    return <></>;
-  }
 
   async function handleSubmit(event) {
     try {
