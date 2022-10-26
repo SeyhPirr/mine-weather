@@ -37,8 +37,8 @@ body{
    position: fixed;
  left:40%;
  top:10%;
- background-image: linear-gradient(to right, #BBD2C58a , #5369768a,#292E498a);
- border-radius:25px;
+ background-color: rgba(92, 138, 138, 0.5);
+ border-radius:10px;
  width:200px;
  height:300px;
  
@@ -49,17 +49,19 @@ body{
 .right{
     color:black;
     background-image: linear-gradient(to right, #BBD2C58a , #5369768a,#292E498a);
-    border-radius:25px;
+    border-radius:10px;
     width:270px;
     height:120px;
     text-align: center;
+
 }
 .left{
     background-image: linear-gradient(to right, #bbd2c556 , #53697656,#292E4956);
-    border-radius:25px;
+    border-radius:10px;
     width:170px;
     height:120px;
     text-align: center;
+    box-shadow: 10px,200px,black;
 }
 .location{
     position: fixed;
